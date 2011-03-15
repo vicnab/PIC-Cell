@@ -17,8 +17,8 @@
 void delay (void)
 {
 	unsigned int i;
-	for (i=0; i<10000; i++)
-	;
+	for (i=0; i<10000; i++){
+		};
 }
 
 void main (void)
@@ -38,6 +38,9 @@ void main (void)
 	OUT1=0;
 	PORTB = 0x00;
 	while (1){
+	PORTB= 0x08;// turn on RB3 only 
+			delay();
+			delay();
 	if(PhoneOn){
 		if(DTMF1 == 1 && DTMF2 ==0 && DTMF3 == 0 && DTMF4 ==0){ 
 			PORTB= 0x80; // turn on RB7 only
@@ -83,7 +86,9 @@ void main (void)
 			PORTB = 0x00;
 	}
 	else
-		{ PORTB |= 0x00;
+		{ 	PORTB= 0x08;// turn on RB3 only 
+			delay();
+			delay();
 		}
 }
 }
