@@ -1,23 +1,23 @@
 MPLINK 4.38, Linker
-Linker Map File - Created Tue Mar 15 15:21:45 2011
+Linker Map File - Created Fri May 27 17:37:57 2011
 
                                  Section Info
                   Section       Type    Address   Location Size(Bytes)
                 ---------  ---------  ---------  ---------  ---------
                _entry_scn       code   0x000000    program   0x000006
                    .cinit    romdata   0x000006    program   0x000002
-             .code_main.o       code   0x000008    program   0x0001c8
-               _cinit_scn       code   0x0001d0    program   0x00009e
-                    .code       code   0x00026e    program   0x000020
-             _startup_scn       code   0x00028e    program   0x00001c
-           .code___init.o       code   0x0002aa    program   0x000002
-        .romdata___init.o    romdata   0x0002ac    program   0x000000
-        .idata___init.o_i    romdata   0x0002ac    program   0x000000
-          .romdata_main.o    romdata   0x0002ac    program   0x000000
-          .idata_main.o_i    romdata   0x0002ac    program   0x000000
-            .code_c018i.o       code   0x0002ac    program   0x000000
-         .romdata_c018i.o    romdata   0x0002ac    program   0x000000
-         .idata_c018i.o_i    romdata   0x0002ac    program   0x000000
+             .code_main.o       code   0x000008    program   0x0001b2
+               _cinit_scn       code   0x0001ba    program   0x00009e
+                    .code       code   0x000258    program   0x000020
+             _startup_scn       code   0x000278    program   0x00001c
+           .code___init.o       code   0x000294    program   0x000002
+        .romdata___init.o    romdata   0x000296    program   0x000000
+        .idata___init.o_i    romdata   0x000296    program   0x000000
+          .romdata_main.o    romdata   0x000296    program   0x000000
+          .idata_main.o_i    romdata   0x000296    program   0x000000
+            .code_c018i.o       code   0x000296    program   0x000000
+         .romdata_c018i.o    romdata   0x000296    program   0x000000
+         .idata_c018i.o_i    romdata   0x000296    program   0x000000
     .config_300000_main.o    romdata   0x300000    program   0x000001
     .config_300001_main.o    romdata   0x300001    program   0x000001
     .config_300003_main.o    romdata   0x300003    program   0x000001
@@ -39,11 +39,11 @@ Linker Map File - Created Tue Mar 15 15:21:45 2011
                               Program Memory Usage 
                                Start         End      
                            ---------   ---------      
-                            0x000000    0x0002ab      
+                            0x000000    0x000295      
                             0x300000    0x300001      
                             0x300003    0x300003      
                             0x300005    0x300006      
-            689 out of 24856 program addresses used, program memory utilization is 2%
+            667 out of 24856 program addresses used, program memory utilization is 2%
 
 
 
@@ -51,30 +51,30 @@ Linker Map File - Created Tue Mar 15 15:21:45 2011
                      Name    Address   Location    Storage File                     
                 ---------  ---------  ---------  --------- ---------                
        ___return_lbl00000   0x000004    program     static                          
-       ___return_lbl00001   0x0002a8    program     static                          
-       ___return_lbl00002   0x00026c    program     static                          
-               __config_0   0x300000    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_1   0x300001    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_2   0x300003    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_3   0x300005    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_4   0x300006    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-                   __init   0x0002aa    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\stdclib\__init.c
-            __zero_memory   0x00026e    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                _do_cinit   0x0001d0    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+       ___return_lbl00001   0x000292    program     static                          
+       ___return_lbl00002   0x000256    program     static                          
+               __config_0   0x300000    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_1   0x300001    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_2   0x300003    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_3   0x300005    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_4   0x300006    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+                   __init   0x000294    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\stdclib\__init.c
+            __zero_memory   0x000258    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                _do_cinit   0x0001ba    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
                    _entry   0x000000    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
-                 _startup   0x00028e    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
-                compare_l   0x000284    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                copy_loop   0x000242    program     static                          
-            copy_one_byte   0x000248    program     static                          
-                    delay   0x000008    program     extern C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-                     done   0x00026c    program     static                          
-             done_copying   0x000256    program     static                          
-                     loop   0x00029e    program     static                          
-                   loop_h   0x00027c    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                   loop_l   0x000286    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                     main   0x000048    program     extern C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-                     test   0x0001ea    program     static                          
-               zero_block   0x00027c    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                 _startup   0x000278    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                compare_l   0x00026e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                copy_loop   0x00022c    program     static                          
+            copy_one_byte   0x000232    program     static                          
+                    delay   0x000008    program     extern C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+                     done   0x000256    program     static                          
+             done_copying   0x000240    program     static                          
+                     loop   0x000288    program     static                          
+                   loop_h   0x000266    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                   loop_l   0x000270    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                     main   0x000048    program     extern C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+                     test   0x0001d4    program     static                          
+               zero_block   0x000266    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
                    ADCON0   0x000fc2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
                ADCON0bits   0x000fc2       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
                    ADCON1   0x000fc1       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
@@ -328,7 +328,7 @@ Linker Map File - Created Tue Mar 15 15:21:45 2011
                      WREG   0x000fe8       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
                 __FPFLAGS   0x000004       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000004       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
-                  __tmp_0   0x000000       data     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
+                  __tmp_0   0x000000       data     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
                 curr_byte   0x000063       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
                curr_entry   0x000065       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
                  data_ptr   0x000067       data     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
@@ -341,30 +341,30 @@ Linker Map File - Created Tue Mar 15 15:21:45 2011
                 ---------  ---------  ---------  --------- ---------                
                    _entry   0x000000    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
        ___return_lbl00000   0x000004    program     static                          
-                    delay   0x000008    program     extern C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-                     main   0x000048    program     extern C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-                _do_cinit   0x0001d0    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
-                     test   0x0001ea    program     static                          
-                copy_loop   0x000242    program     static                          
-            copy_one_byte   0x000248    program     static                          
-             done_copying   0x000256    program     static                          
-       ___return_lbl00002   0x00026c    program     static                          
-                     done   0x00026c    program     static                          
-            __zero_memory   0x00026e    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-               zero_block   0x00027c    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                   loop_h   0x00027c    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                compare_l   0x000284    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                   loop_l   0x000286    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
-                 _startup   0x00028e    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
-                     loop   0x00029e    program     static                          
-       ___return_lbl00001   0x0002a8    program     static                          
-                   __init   0x0002aa    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\stdclib\__init.c
-               __config_0   0x300000    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_1   0x300001    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_2   0x300003    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_3   0x300005    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-               __config_4   0x300006    program     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
-                  __tmp_0   0x000000       data     static C:\Users\benjamingrantdu\PIC-Cell\Initial Steps\main.c
+                    delay   0x000008    program     extern C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+                     main   0x000048    program     extern C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+                _do_cinit   0x0001ba    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                     test   0x0001d4    program     static                          
+                copy_loop   0x00022c    program     static                          
+            copy_one_byte   0x000232    program     static                          
+             done_copying   0x000240    program     static                          
+       ___return_lbl00002   0x000256    program     static                          
+                     done   0x000256    program     static                          
+            __zero_memory   0x000258    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+               zero_block   0x000266    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                   loop_h   0x000266    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                compare_l   0x00026e    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                   loop_l   0x000270    program     static C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\proc\p18F4455.asm
+                 _startup   0x000278    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\startup\c018i.c
+                     loop   0x000288    program     static                          
+       ___return_lbl00001   0x000292    program     static                          
+                   __init   0x000294    program     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\stdclib\__init.c
+               __config_0   0x300000    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_1   0x300001    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_2   0x300003    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_3   0x300005    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+               __config_4   0x300006    program     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
+                  __tmp_0   0x000000       data     static C:\Users\Ben\PIC-Cell\Initial Steps\main.c
                      SIGN   0x000003       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
                 __FPFLAGS   0x000004       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm
             __FPFLAGSbits   0x000004       data     extern C:\Program Files\Microchip\mplabc18\v3.37\src\traditional\math\cmath18.asm

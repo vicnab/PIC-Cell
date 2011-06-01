@@ -35,61 +35,53 @@ void main (void)
 	TRISB =0x00;
 	TRISA =0xFF;
 	
-	OUT1=0;
-	PORTB = 0x00;
-	while (1){
-	PORTB= 0x08;// turn on RB3 only 
-			delay();
-			delay();
-	if(PhoneOn){
-		if(DTMF1 == 1 && DTMF2 ==0 && DTMF3 == 0 && DTMF4 ==0){ 
-			PORTB= 0x80; // turn on RB7 only
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 0 && DTMF2 ==1 && DTMF3 == 0 && DTMF4 ==0){ 
-			 PORTB= 0x40; // turn on RB6 only  
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 1 && DTMF2 ==1 && DTMF3 == 0 && DTMF4 ==0){ 
-			 PORTB= 0x20; // turn on RB5 only 
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 0 && DTMF2 ==0 && DTMF3 == 1 && DTMF4 ==0){ 
-			PORTB= 0x10;  // turn on RB4 only
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 1 && DTMF2 ==0 && DTMF3 == 1 && DTMF4 ==0){ 
-			PORTB= 0x08;// turn on RB3 only 
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 0 && DTMF2 ==1 && DTMF3 == 1 && DTMF4 ==0){ 
-			PORTB= 0x04; // turn on RB2 only 
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 1 && DTMF2 ==1 && DTMF3 == 1 && DTMF4 ==0){ 
-			PORTB= 0x02; //turn on RB1 only
-			delay();
-			delay();
-			}
-		else if(DTMF1 == 0 & DTMF2 ==0 & DTMF3 == 0 & DTMF4 ==1){ 
-			PORTB= 0x01; // turn on RB0 only 
-			delay();
-			delay();
-			}
-		else
-			PORTB = 0x00;
-	}
-	else
-		{ 	PORTB= 0x08;// turn on RB3 only 
-			delay();
-			delay();
+while (1){
+		if(PhoneOn){
+			if(DTMF1 == 1 && DTMF2 ==0 && DTMF3 == 0 && DTMF4 ==0){ 
+				PORTB= 0x80; // turn on RB7 only
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 0 && DTMF2 ==1 && DTMF3 == 0 && DTMF4 ==0){ 
+				 PORTB= 0x40; // turn on RB6 only  
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 1 && DTMF2 ==1 && DTMF3 == 0 && DTMF4 ==0){ 
+				 PORTB= 0x20; // turn on RB5 only 
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 0 && DTMF2 ==0 && DTMF3 == 1 && DTMF4 ==0){ 
+				PORTB= 0x10;  // turn on RB4 only
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 1 && DTMF2 ==0 && DTMF3 == 1 && DTMF4 ==0){ 
+				PORTB= 0x08;// turn on RB3 only 
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 0 && DTMF2 ==1 && DTMF3 == 1 && DTMF4 ==0){ 
+				PORTB= 0x04; // turn on RB2 only 
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 1 && DTMF2 ==1 && DTMF3 == 1 && DTMF4 ==0){ 
+				PORTB= 0x02; //turn on RB1 only
+				delay();
+				delay();
+				}
+			else if(DTMF1 == 0 & DTMF2 ==0 & DTMF3 == 0 & DTMF4 ==1){ 
+				PORTB= 0x01; // turn on RB0 only 
+				delay();
+				delay();
+				}
+			else
+				PORTB = 0x00;
 		}
+
+
 }
 }
 	
